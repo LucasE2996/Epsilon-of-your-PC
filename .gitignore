@@ -1,32 +1,17 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#include <stdio.h>
+#include <stdlib.h>
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
+main()
+{
+	double x;
+	int a;
+	a = 0;
+	x = 1;
+	while ((x+1)>1){
+		x=x/2;
+		a++;
+	}
+	printf("x = %.99lf \n\n",2*x);
+	printf("Counter = %d \n\n",a);
+	system("pause");
+}
